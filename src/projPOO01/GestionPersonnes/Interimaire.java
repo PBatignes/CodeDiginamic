@@ -44,7 +44,7 @@ public class Interimaire extends Salarie {
 	
 	public static void ctrlDureeMois(Integer duree) throws ExceptionInt {
 		
-		if (duree < 1) {
+		if (duree <= 1) {
 			
 			throw new ExceptionInt("La durée ne peut ètre inférieur à 1 mois");
 			

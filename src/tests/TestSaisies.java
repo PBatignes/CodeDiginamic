@@ -9,11 +9,14 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
+import projPOO01.Exceptions.ExceptionInt;
 import projPOO01.Exceptions.ExceptionNumeroUnique;
 import projPOO01.Exceptions.ExceptionSaisiNumeroSecu;
 import projPOO01.Exceptions.ExceptionSaisieCodePostal;
+import projPOO01.Exceptions.ExceptionTailleString;
 import projPOO01.GestionPersonnes.Client;
 import projPOO01.GestionPersonnes.Fournisseur;
+import projPOO01.GestionPersonnes.Interimaire;
 import projPOO01.GestionPersonnes.Personne;
 import projPOO01.GestionPersonnes.Salarie;
 
@@ -31,6 +34,10 @@ public class TestSaisies {
 	private final String nsf="12345678901234";
 	private final String nsf1="123abcd890123";
 	private final String nst="1234567890123";
+	private final String nca ="1365478";
+	private final String ncaf ="1365";
+	private final Integer dm = 5;
+	private final Integer dmf = 1;
 	private ArrayList<Fournisseur> flist;
 	private Fournisseur f;
 	private final Integer ofnumunique = 1;
@@ -113,6 +120,30 @@ public class TestSaisies {
 			Client.CtrlNumeroUniqueClient(cnumuniquef1, clist);
 		}catch(ExceptionNumeroUnique e ) {
 			assertThat(e.getMessage(),is("Le numero saisi n'est pas un entier"));
+		}
+		
+	}
+	
+	@Test
+	public void testCtrlContratAgence() {
+		
+		try {
+			Interimaire.ctrlContratAgence(nca);
+			Interimaire.ctrlContratAgence(ncaf);
+		} catch (ExceptionTailleString e) {
+			assertThat(e.getMessage(),is("Le nombre de caractère est inférieur à 5"));
+		}
+		
+	}
+	
+	@Test
+	public void testCtrlDureeMois() {
+		
+		try {
+			Interimaire.ctrlDureeMois(dm);
+			Interimaire.ctrlDureeMois(dmf);
+		} catch (ExceptionInt e) {
+			assertThat(e.getMessage(),is("La durée ne peut ètre inférieur à 1 mois"));
 		}
 		
 	}
