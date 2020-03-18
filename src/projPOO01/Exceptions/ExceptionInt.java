@@ -1,5 +1,11 @@
 package projPOO01.Exceptions;
 
+/**Exception lancée si un nombre n'est pas un entier
+ *
+ * @author Pierre
+ * @since 18/03/2020
+ *
+ */
 public class ExceptionInt extends Exception {
 
 	/**

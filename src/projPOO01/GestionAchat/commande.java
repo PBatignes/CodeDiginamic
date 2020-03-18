@@ -10,6 +10,12 @@ public class commande {
 	private String pattern = "dd-MM-yyyy";
 	private SimpleDateFormat sd = new SimpleDateFormat(pattern);
 	
+	/**Constructor
+	 *
+	 * @param d une date
+	 * @param i un intitulé
+	 * @param q une quantitée
+	 */
 	public commande(Date d, String i, int q) {
 		// TODO Auto-generated constructor stub
 		this.date = d;
@@ -17,6 +23,9 @@ public class commande {
 		this.quantite = q;
 	}
 
+	/**
+	 *Override de la fonction toString de la classe mère
+	 */
 	@Override
 	public String toString() {
 		return intitule + "[date=" +sd.format(date) + ", quantite=" + quantite + "]";

@@ -1,6 +1,5 @@
 package projPOO01.GestionAchat;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -12,6 +11,12 @@ public class Achat {
 	private SimpleDateFormat sd = new SimpleDateFormat(pattern);
 	
 	
+	/**Constructor
+	 *
+	 * @param d une date
+	 * @param i un intitulé
+	 * @param q une quantitée
+	 */
 	public Achat(Date d, String i, int q) {
 		// TODO Auto-generated constructor stub
 		this.date =d;
@@ -20,6 +25,9 @@ public class Achat {
 		this.quantite =q;
 	}
 
+	/**
+	 *Override de la fonction toString de la classe mère
+	 */
 	@Override
 	public String toString() {
 			return intitule + "[date=" +sd.format(date) + ", quantite=" + quantite + "]";

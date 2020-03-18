@@ -1,5 +1,11 @@
 package projPOO01.Exceptions;
 
+/**Exception lancée si un numéro de code postal entrée est incorrect
+ *
+ * @author Pierre
+ * @since 18/03/2020
+ *
+ */
 public class ExceptionSaisieCodePostal extends Exception {
 
 	/**

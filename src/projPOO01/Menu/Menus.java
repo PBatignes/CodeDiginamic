@@ -16,10 +16,16 @@ public class Menus {
 	
 	private static String choix = null;
 	
+	/**
+	 * Méthode permettant de quitter l'application
+	 */
 	public static void quitter() {
 		System.exit(0);
 	}
 			
+	/**
+	 * Méthode permettant d'afficher le menu
+	 */
 	public static void Menu() {
 		Map<String, iExecute> im1 = new HashMap<String,iExecute>();
 
@@ -43,6 +49,9 @@ public class Menus {
 	}
 
 	
+	/**
+	 * Méthode permettant d'afficher le menu de saisie des donées
+	 */
 	public static void Saisir() {
 				
 		Map<String, iExecute> im1 = new HashMap<String,iExecute>();

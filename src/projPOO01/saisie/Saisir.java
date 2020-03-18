@@ -28,6 +28,9 @@ public class Saisir {
 	public static ArrayList<Personne> listfournisseur = new ArrayList<Personne>();
 	public static ArrayList<Personne> listInterimere = new ArrayList<Personne>();
 
+	/**
+	 * Méthode permettant de saisir toutes les données
+	 */
 	public static void SaisirAll() {
 
 		Saisir.SaisirSalarie();
@@ -38,6 +41,9 @@ public class Saisir {
 		Menus.Menu();
 	}
 
+	/**
+	 * Méthode permettant de saisir un patron
+	 */
 	public static void SaisirPatron() {
 		boolean erreurcp;
 		boolean erreurns;
@@ -94,6 +100,9 @@ public class Saisir {
 		return;
 	}
 
+	/**
+	 * Méthode permettant de saisir un salarié
+	 */
 	public static void SaisirSalarie() {
 
 		ArrayList<Salarie> sl = new ArrayList<Salarie>();
@@ -164,6 +173,9 @@ public class Saisir {
 		return;
 	}
 
+	/**
+	 * Méthode permettant de saisir un client
+	 */
 	public static void SaisirClient() {
 
 		ArrayList<Client> cl = new ArrayList<Client>();
@@ -221,6 +233,9 @@ public class Saisir {
 		return;
 	}
 
+	/**
+	 * Méthode permettant de saisir un fournisseur
+	 */
 	public static void SaisirFournisseur() {
 
 		ArrayList<Fournisseur> cl = new ArrayList<Fournisseur>();
@@ -278,6 +293,9 @@ public class Saisir {
 		return;
 	}
 
+	/**
+	 * Méthode permettant de saisir un intérimaire
+	 */
 	public static void SaisirInterimaire() {
 
 		ArrayList<Interimaire> il = new ArrayList<Interimaire>();
@@ -448,6 +466,11 @@ public class Saisir {
 
 	}
 
+	/**
+	 * Methode permettant de remplir un tableau de commande
+	 * 
+	 * @return ArrayList<commande>
+	 */
 	public static ArrayList<commande> SaisirCommande() {
 		ArrayList<commande> cmd = new ArrayList<commande>();
 		Date d = null;

@@ -3,9 +3,10 @@
  */
 package projPOO01.Exceptions;
 
-/**
+/**Exception lancée si la taille d'une string est incorrecte
  *
  * @author Pierre
+ * @since 18/03/2020
  *
  */
 public class ExceptionTailleString extends Exception{

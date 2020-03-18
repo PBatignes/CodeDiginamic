@@ -1,5 +1,13 @@
 package projPOO01.Exceptions;
 
+/**Exception lancée si le numéro de sécu est incorrect :
+ * 	-Trop ou pas assez de caractères
+ * 	-Contiens pas que des chiffres
+ *
+ * @author Pierre
+ * @since 18/03/2020
+ *
+ */
 public class ExceptionSaisiNumeroSecu extends Exception {
 
 	/**

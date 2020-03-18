@@ -9,9 +9,10 @@ import projPOO01.saisie.Saisir;
 
 public class Affichages {
 
+	/**
+	 * Méthode permettant d'afficher les données enregistrées
+	 */
 	public static void Afficher() {
-		
-		
 		
 		int choix;
 		ArrayList<Personne> listpatron = new ArrayList<Personne>();

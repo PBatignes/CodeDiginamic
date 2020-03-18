@@ -8,6 +8,12 @@ import projPOO01.GestionPersonnes.IClient;
 import projPOO01.GestionPersonnes.IFournisseur;
 import projPOO01.Menu.Menus;
 
+/**
+ *
+ * @author Pierre
+ * @since 18/03/2020
+ *
+ */
 public class Choisir {
 	/**
 	 * Methode permettant d'afficher et de choisir un IClient
@@ -41,6 +47,11 @@ public class Choisir {
 		return c;
 	}
 	
+	/**
+	 * Methode permettant d'afficher et de choisir un IFournisseur
+	 * @param listf liste de IClient
+	 * @return IFournisseur choisi par l'utilisateur
+	 */
 	public static IFournisseur ChoisirIFournisseur(List<IFournisseur> listf) {
 		System.out.println("choix du fournisseur :");
 		String choix = null;

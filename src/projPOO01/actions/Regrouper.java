@@ -37,6 +37,11 @@ public class Regrouper {
 		
 	}
 	
+	/**
+	 * Méthode permettant de regrouper les IFournisseur 
+	 * 
+	 * @return List<IFournisseur>  pour qui isFournisseur() est vrai
+	 */
 	public static void RegrouperIFournisseur() {
 		List<IFournisseur> list = new ArrayList<IFournisseur>();
 		ArrayList<Personne> plist = new ArrayList<Personne>();
